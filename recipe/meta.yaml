@@ -1,6 +1,6 @@
 {% set name = "xpdtools" %}
-{% set version = "0.1.4" %}
-{% set sha256 = "ea4fdccb8b9b986b89002345a7b313ba11aa46b41a2cd983b720693748eac4b6" %}
+{% set version = "0.1.5" %}
+{% set sha256 = "9de46a0f75a52bda87941f3c780e642389adca854b9db09f4ed1fca79eca6991" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: /sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16 & export DISPLAY=:99.0 & python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
     - image_to_iq = xpdtools.cli.process_tiff:run_main
 
@@ -41,7 +41,6 @@ test:
   imports:
     - xpdtools
     - xpdtools.tools
-    - xpdtools.cli.process_tiff
   commands:
     - image_to_iq -- --help
 
