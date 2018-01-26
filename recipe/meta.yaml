@@ -41,7 +41,6 @@ test:
   imports:
     - xpdtools
     - xpdtools.tools
-    - xpdtools.cli.process_tiff
   commands:
     - image_to_iq -- --help
 
