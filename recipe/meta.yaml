@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: export DISPLAY=:99.0 & python setup.py install --single-version-externally-managed --record record.txt
+  script: /sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16 & export DISPLAY=:99.0 & python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
     - image_to_iq = xpdtools.cli.process_tiff:run_main
 
