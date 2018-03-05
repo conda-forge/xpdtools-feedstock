@@ -1,6 +1,6 @@
 {% set name = "xpdtools" %}
-{% set version = "0.1.7" %}
-{% set sha256 = "00a9530adcde0fdb6c7c1107563cb16f4c6727d68d14fb973f7b734eeef5feb0" %}
+{% set version = "0.1.8" %}
+{% set sha256 = "fd2d77941207643cb46bd872ad4897f19147dd751e1cd306bbf168b6551f21ea" %}
 
 package:
   name: {{ name|lower }}
