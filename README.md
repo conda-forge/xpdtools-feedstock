@@ -14,12 +14,15 @@ Summary: Analysis Tools for XPD
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/xpdtools-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/xpdtools-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/xpdtools-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/xpdtools-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/xpdtools/badges/version.svg)](https://anaconda.org/conda-forge/xpdtools)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/xpdtools/badges/downloads.svg)](https://anaconda.org/conda-forge/xpdtools)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-xpdtools-green.svg)](https://anaconda.org/conda-forge/xpdtools) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/xpdtools.svg)](https://anaconda.org/conda-forge/xpdtools) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/xpdtools.svg)](https://anaconda.org/conda-forge/xpdtools) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/xpdtools.svg)](https://anaconda.org/conda-forge/xpdtools) |
 
 Installing xpdtools
 ===================
