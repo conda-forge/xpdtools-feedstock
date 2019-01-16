@@ -28,7 +28,7 @@ requirements:
     - scipy
     - scikit-beam
     - pyyaml
-    - pyfai
+    - pyfai ==0.15
     - streamz_ext
     - fire
     - pims
