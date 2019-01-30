@@ -29,7 +29,7 @@ requirements:
     - scikit-beam
     - pyyaml
     - pyfai
-    - streamz_ext
+    - rapidz
     - fire
     - pims
     - fabio
