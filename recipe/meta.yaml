@@ -1,6 +1,6 @@
 {% set name = "xpdtools" %}
-{% set version = "0.4.3" %}
-{% set sha256 = "5ee46b9e2ac8d1f6f301d6308701c601a496161565819f88601015c1ab08a4b5" %}
+{% set version = "0.5.0" %}
+{% set sha256 = "e919b3ed1dc8b8a8b44bb6c9179261242ab01b50793c47c5b010df473784cf11" %}
 
 package:
   name: {{ name|lower }}
@@ -29,7 +29,7 @@ requirements:
     - scikit-beam
     - pyyaml
     - pyfai
-    - streamz_ext
+    - rapidz
     - fire
     - pims
     - fabio
