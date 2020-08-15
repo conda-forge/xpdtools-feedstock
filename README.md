@@ -5,7 +5,7 @@ Home: https://github.com/xpdAcq/xpdtools
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Analysis Tools for XPD
 
