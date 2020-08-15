@@ -1,6 +1,6 @@
 {% set name = "xpdtools" %}
-{% set version = "0.8.1" %}
-{% set sha256 = "efbdc18ffacb681f2baa9a0f535dd1e9e64ded52037e1330863b98d3e181c165" %}
+{% set version = "0.8.2" %}
+{% set sha256 = "b7b3412a4137df3ef60ba93740614039819615265e4e833c8b1a7de15b631d19" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed . 
   entry_points:
     - image_to_iq = xpdtools.cli.process_tiff:run_main
