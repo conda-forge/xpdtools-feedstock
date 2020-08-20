@@ -5,7 +5,7 @@ Home: https://github.com/xpdAcq/xpdtools
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Analysis Tools for XPD
 
@@ -116,5 +116,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@CJ-Wright](https://github.com/CJ-Wright/)
+* [@st3107](https://github.com/st3107/)
 
