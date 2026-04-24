@@ -13,17 +13,17 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - image_to_iq = xpdtools.cli.process_tiff:run_main
 
 requirements:
-  build:
-    - python >=3
+  host:
+    - python {{ python_min }}
     - pip 
   run:
-    - python >=3
+    - python >={{ python_min }}
     - numpy
     - scipy
     - scikit-beam
@@ -41,6 +41,8 @@ requirements:
 
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - xpdtools
     - xpdtools.tools
